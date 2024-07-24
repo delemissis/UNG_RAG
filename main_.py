@@ -14,6 +14,7 @@ import streamlit as st
 from langchain_community.document_loaders import RecursiveUrlLoader
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
+import sqlite3
 
 os.environ["OPENAI_API_KEY"] = st.secrets["openai_key"]
 
