@@ -16,6 +16,10 @@ from langchain_community.document_loaders import RecursiveUrlLoader
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 os.environ["OPENAI_API_KEY"] = st.secrets["openai_key"]
 
 st.title("Údarás na Gaeltachta")
