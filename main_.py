@@ -1,4 +1,5 @@
 import bs4
+import sqlite3
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_chroma import Chroma
@@ -14,7 +15,6 @@ import streamlit as st
 from langchain_community.document_loaders import RecursiveUrlLoader
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
-import sqlite3
 
 os.environ["OPENAI_API_KEY"] = st.secrets["openai_key"]
 
