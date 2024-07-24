@@ -141,6 +141,7 @@ pypdf==4.2.0
 pypdfium2==4.30.0
 PyPika==0.48.9
 pyproject_hooks==1.1.0
+pysqlite3==0.5.3
 pytesseract==0.3.10
 python-dateutil==2.9.0.post0
 python-docx==1.1.2
@@ -204,5 +205,3 @@ xlrd==2.0.1
 XlsxWriter==3.2.0
 yarl==1.9.4
 zipp==3.19.2
-pysqlite3-binary==3.35.0
-
